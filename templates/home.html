@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+        }
+
+        .content {
+            text-align: center;
+            width: 100%;
+        }
+
+        h1 {
+            color: orange;
+            font-size: 4em;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .user-nav {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding-top: 20px; /* Отступ сверху для user-nav */
+        }
+
+        .user-nav a {
+            text-decoration: underline;
+            color: orange;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        .user-nav a:hover {
+            color: darkorange;
+        }
+
+        .site-nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px; /* Отступ от текста до кнопок */
+            width: 100%;
+        }
+
+        .site-nav a {
+            text-decoration: none;
+            background-color: orange;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .site-nav a:hover {
+            background-color: #e69500;
+        }
+    </style>
+</head>
+<body>
+    <div class="user-nav">
+        {% if 'user_id' in session %}
+        <a href="/dashboard">Dashboard</a>
+        <a href="/logout">Logout</a>
+        {% else %}
+        <a href="/register">Register</a>
+        <a href="/login">Login</a>
+        {% endif %}
+    </div>
+
+    <div class="content">
+        <h1>Home Page</h1>
+        <p>This is the home page of our site.</p>
+    </div>
+
+    <div class="site-nav">
+        <a href="/home">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </div>
+</body>
+</html>

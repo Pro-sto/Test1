@@ -1,0 +1,95 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: orange;
+    font-size: 4em;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* Обновленная навигация для пользовательских ссылок */
+.user-nav {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.user-nav a {
+    text-decoration: underline;
+    color: orange;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.user-nav a:hover {
+    color: darkorange;
+}
+
+/* Стили для основных кнопок навигации остаются такими же */
+.nav {
+    position: absolute;
+    top: 20px;
+    left: 300px;
+}
+
+.nav a, .button {
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 5px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav a:hover, .button:hover {
+    background-color: #e69500;
+}
+
+/* Стили для формы */
+form {
+    margin-top: 50px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 300px;
+    height: 40px;
+    margin: 10px 0;
+    display: block;
+}
+.user-nav {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.user-nav a {
+    text-decoration: underline;
+    color: orange;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.user-nav a:hover {
+    color: darkorange;
+}
+
+.site-nav a {
+    padding: 5px 20px;
+    margin: 5px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.site-nav a:hover {
+    background-color: #e69500;
+}
